@@ -3,9 +3,8 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 import path from 'node:path'
 
-// Vite config simplificado para um repositorio Git padrao (fora do runtime
-// de preview do Figma Make, que injetava plugins internos via .figma/make).
 export default defineConfig({
+  base: '/Van-Facil/',
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
